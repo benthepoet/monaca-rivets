@@ -1,0 +1,17 @@
+<ons-page id="todos-list">
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button rv-on-click="actions.openMenu">
+                <ons-icon icon="md-menu"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center">My Todos</div>
+    </ons-toolbar>
+    
+    <div class="content" style="text-align: center">
+        <ons-list>
+            <ons-list-header>Default</ons-list-header>
+            <ons-list-item rv-each-todo="state.todos" rv-on-click="actions.viewTodo">{todo.text}</ons-list-item>
+        </ons-list>
+    </div>
+</ons-page>

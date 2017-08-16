@@ -1,0 +1,15 @@
+<ons-page id="sign-in">
+    <div class="content" style="text-align: center">
+        <h2>{state.title}<h2>
+        
+        <form>
+            <div>
+                <ons-input type="email" placeholder="Email" modifier="underbar" rv-value="state.email" float></ons-input>
+            </div>
+            <div>
+                <ons-input type="password" placeholder="Password" modifier="underbar" rv-value="state.password" float></ons-input>
+            </div>
+            <ons-button id="push-button" rv-on-click="actions.signIn">Sign In</ons-button>
+        </form>
+    </div>
+</ons-page>
